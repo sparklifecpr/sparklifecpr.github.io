@@ -43,13 +43,5 @@ if (regForm) {
   });
 }
 
-const contactForm = document.querySelector('#contactForm');
-if (contactForm) {
-  contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const d = new FormData(contactForm);
-    const subject = encodeURIComponent(`SparkLife inquiry from ${d.get('name')}`);
-    const body = encodeURIComponent(`Name: ${d.get('name')}\nPhone: ${d.get('phone')}\nEmail: ${d.get('email')}\n\n${d.get('message')}`);
-    window.location.href = `mailto:${window.SPARKLIFE_CONFIG.contactEmail}?subject=${subject}&body=${body}`;
-  });
+;
 }
