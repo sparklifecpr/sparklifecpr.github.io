@@ -6,7 +6,7 @@
 */
 window.SPARKLIFE_CONFIG = {
   payments: {
-    cprAed: "",
+    cprAed: "https://buy.stripe.com/cNibJ2ckV6XV4RegS100000",
     bls: "",
     firstAid: "",
     pediatric: "",
